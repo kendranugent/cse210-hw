@@ -4,6 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        GoalCreator goalCreator = new GoalCreator();
+        Menu menu = new Menu();
+        bool running = true;
+
+        while (running)
+        {
+            running = menu.ChooseAndRun(goalCreator);
+        }
     }
 }
